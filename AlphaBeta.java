@@ -1,6 +1,6 @@
 public class AlphaBeta {
     
-    public int negamax(int[] board, int depth, int alpha, int beta, int color) {
+    public int negamax(C4State state, int depth, int alpha, int beta) {
         if (depth == 0 || isGameOver(board)) {
           return color * evaluate(board);
         }
